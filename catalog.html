@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Магазин - Дизайн-студия Nerds</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic-ext' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="page-catalog">
+  <div class="page-top-wrapper">
+    <header class="main-header container clearfix">
+      <a class="logo" href="index.html" title="Дизайн-студия Nёrds">
+        <img class="logo__img" src="img/main-logo.png" width="139" height="56" alt="Дизайн-студия Nёrds">
+      </a>
+      <nav class="main-header-navigation">
+        <ul class="main-header-navigation-list">
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a class="active" href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="busket-block">
+          <a href="#" class="busket-enter"><i class="icon-basket"></i> Корзина</a>
+        </div>
+      </nav>
+    </header>
+    <h1 class="main-top-heading container">Добро пожаловать в магазин готовых макетов</h1>
+  </div>
+
+  <main class="main-content container clearfix">
+    <aside class="catalog-filter">
+      <form class="catalog-filter-form" action="#" method="post">
+        <div class="price-range">
+          <p class="heading">Стоимость:</p>
+          <div class="price-range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price-wrapper">От <input class="min-price" type="text" name="min-price" value="0"></label>
+            <label class="max-price-wrapper">До <input class="max-price" type="text" name="max-price" value="15 000"></label>
+          </div>
+        </div>
+        <div class="grid-select">
+          <p class="heading">Сетка:</p>
+          <input class="grid-select__input" id="option-adaptive-grid" type="radio" name="grid-select" value="adaptive" checked>
+          <label for="option-adaptive-grid">Адаптивная</label>
+          <input class="grid-select__input" id="option-fixed-grid" type="radio" name="grid-select" value="fixed">
+          <label for="option-fixed-grid">Фиксированная</label>
+          <input class="grid-select__input" id="option-fluid-grid" type="radio" name="grid-select" value="fluid">
+          <label for="option-fluid-grid">Резиновая</label>
+        </div>
+        <div class="features-select">
+          <p class="heading">Особенности:</p>
+          <input class="features-select__input" id="option-slider" type="checkbox" name="features-select[]" value="slider" checked>
+          <label for="option-slider">Слайдер</label>
+          <input class="features-select__input" id="option-advantages-block" type="checkbox" name="features-select[]" value="advantages-block">
+          <label for="option-advantages-block">Блок преимуществ</label>
+          <input class="features-select__input" id="option-news" type="checkbox" name="features-select[]" value="news" checked>
+          <label for="option-news">Новости</label>
+          <input class="features-select__input" id="option-gallery" type="checkbox" name="features-select[]" value="gallery">
+          <label for="option-gallery">Галерея</label>
+          <input class="features-select__input" id="option-busket" type="checkbox" name="features-select[]" value="busket">
+          <label for="option-busket">Корзина</label>
+        </div>
+        <a class="btn btn-filter-show" href="#" title="Показать">Показать</a>
+      </form>
+    </aside>
+
+    <div class="catalog-list">
+      <div class="catalog-list-sorter clearfix">
+        <ul class="sorting-menu">
+          <li>Сортировать:</li>
+          <li><a class="sorting-menu-item" href="#">По цене</a></li>
+          <li><a class="sorting-menu-item" href="#">По типу</a></li>
+          <li><a class="sorting-menu-item" href="#">По функционалу</a></li>
+        </ul>
+
+        <a class="btn-sort icon-up-dir" href="#">Вверх</a>
+        <a class="btn-sort icon-down-dir btn-checked" href="#">Вниз</a>
+      </div>
+
+      <div class="catalog-items clearfix">
+        <a class="catalog-item" href="#">
+          <figure class="catalog-thumb">
+            <img src="img/thumb-catalog-item-1.jpg"  width="240" height="240" alt="Изображение товара">
+          </figure>
+          <div class="catalog-description">   
+            <div class="description-heading">Aviator</div>
+            <div class="description-text">Интернет-магазин с&nbsp;личным кабинетом</div>
+            <div class="btn btn-price">10 000 р.</div>
+          </div>
+        </a>
+
+        <a class="catalog-item" href="#">
+          <figure class="catalog-thumb">
+            <img src="img/thumb-catalog-item-2.jpg" width="240" height="240" alt="Изображение товара">
+          </figure>
+          <div class="catalog-description">
+            <div class="description-heading">Sunset</div>
+            <div class="description-text">Интернет-магазин с&nbsp;личным кабинетом</div>
+            <div class="btn btn-price">10 000 р.</div>
+          </div>
+        </a>
+
+        <a class="catalog-item" href="#">
+          <figure class="catalog-thumb">
+            <img src="img/thumb-catalog-item-3.jpg" width="240" height="240" alt="Изображение товара">
+          </figure>
+          <div class="catalog-description">   
+            <div class="description-heading">Forte</div>
+            <div class="description-text">Интернет-магазин с&nbsp;личным кабинетом</div>
+            <div class="btn btn-price">10 000 р.</div>
+          </div>
+        </a>
+
+        <a class="catalog-item" href="#">
+          <figure class="catalog-thumb">
+            <img src="img/thumb-catalog-item-4.jpg" width="240" height="240" alt="Изображение товара">
+          </figure>
+          <div class="catalog-description">   
+            <div class="description-heading">Modern</div>
+            <div class="description-text">Интернет-магазин с&nbsp;личным кабинетом</div>
+            <div class="btn btn-price">10 000 р.</div>
+          </div>
+        </a>
+
+        <a class="catalog-item" href="#">
+          <figure class="catalog-thumb">
+            <img src="img/thumb-catalog-item-5.jpg" width="240" height="240" alt="Изображение товара">
+          </figure>
+          <div class="catalog-description">   
+            <div class="description-heading">Avenue</div>
+            <div class="description-text">Интернет-магазин с&nbsp;личным кабинетом</div>
+            <div class="btn btn-price">10 000 р.</div>
+          </div>
+        </a>
+
+        <a class="catalog-item" href="#">
+          <figure class="catalog-thumb">
+            <img src="img/thumb-catalog-item-6.jpg" width="240" height="240" alt="Изображение товара">
+          </figure>
+          <div class="catalog-description">   
+            <div class="description-heading">Dovetail</div>
+            <div class="description-text">Интернет-магазин с&nbsp;личным кабинетом</div>
+            <div class="btn btn-price">10 000 р.</div>
+          </div>
+        </a>
+      </div>
+
+      <nav class="catalog-list-pagination">
+        <a class="list-pagination-item active" href="#">1</a>
+        <a class="list-pagination-item" href="#">2</a>
+        <a class="list-pagination-item" href="#">3</a>
+        <a class="list-pagination-item next-page" href="#">Следующая</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer-map">
+      <div class="main-footer-map-wrapper" id="main-footer-map"></div>
+      <section class="map-contacts">
+        <h3 class="heading">Nёrds Design Studio</h3>
+        <p>191186, Санкт-Петербург, <br>
+        Б. Конюшенная, д. 19/8</p>
+        <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <a class="btn btn-email" href="email-form-page.html">Напишите нам</a>
+      </section>
+    </div>
+    <div class="main-footer-socials container clearfix">
+      <div class="social-icons">
+        <a href="#" class="social-btn"><i class="icon-vk"></i>ВКонтакте</a>
+        <a href="#" class="social-btn"><i class="icon-facebook"></i>Facebook</a>
+        <a href="#" class="social-btn"><i class="icon-instagramm"></i>Instagram</a>
+      </div>
+      <div class="social-text">
+        <p class="heading">Давайте дружить, это выгодно!</p>
+        <p class="sub-heading">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-email">
+    <div class="modal-email-close-btn">закрыть</div>
+    <form class="modal-email-form" action="/auth" method="post">
+      <div class="form-column-wrapper clearfix">
+        <div class="form-column">
+          <label for="login-field">Ваше имя:</label>
+          <input type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="form-column">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" required placeholder="Для отправки ответа">
+        </div>
+      </div>    
+      <label for="message-field">Текст письма:</label>
+      <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме"></textarea>
+      <div class="form-column-wrapper clearfix">
+        <div class="form-column">
+          <input type="submit" value="Отправить">
+        </div>
+        <div class="form-column">
+          <a class="btn btn-cancel" href="#">Отмена</a>
+        </div>
+      </div> 
+    </form>
+  </div>
+  <!-- //Modals -->
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=ru"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

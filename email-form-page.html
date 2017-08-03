@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Дизайн-студия Nerds</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic-ext' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="page-email-form">
+  <div class="page-top-wrapper">
+    <header class="main-header container clearfix">
+      <a class="logo" href="index.html" title="Дизайн-студия Nёrds">
+        <img class="logo__img" src="img/main-logo.png" width="139" height="56" alt="Дизайн-студия Nёrds">
+      </a>
+      <nav class="main-header-navigation">
+        <ul class="main-header-navigation-list">
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="busket-block">
+          <a href="#" class="busket-enter"><i class="icon-basket"></i> Корзина</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <main class="main-content container clearfix">
+      <p class="heading">Напишите нам: </p>
+      <form class="modal-email-form" action="/auth" method="post">
+        <div class="form-column-wrapper clearfix">
+          <div class="form-column">
+            <label for="login-field">Ваше имя:</label>
+            <input type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="form-column">
+            <label for="email-field">Ваш e-mail:</label>
+            <input type="email" name="email" id="email-field" required placeholder="Для отправки ответа">
+          </div>
+        </div>    
+        <label for="message-field">Текст письма:</label>
+        <textarea name="message" id="message-field" rows="5" placeholder="В свободной форме"></textarea>
+        <div class="form-column-wrapper clearfix">
+          <div class="form-column">
+            <input type="submit" value="Отправить">
+          </div>
+        </div> 
+      </form>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer-map">
+      <div class="main-footer-map-wrapper" id="main-footer-map"></div>
+      <section class="map-contacts">
+        <h3 class="heading">Nёrds Design Studio</h3>
+        <p>191186, Санкт-Петербург, <br>
+        Б. Конюшенная, д. 19/8</p>
+        <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <a class="btn btn-email" href="#">Напишите нам</a>
+      </section>
+    </div>
+    <div class="main-footer-socials container clearfix">
+      <div class="social-icons">
+        <a href="#" class="social-btn"><i class="icon-vk"></i>ВКонтакте</a>
+        <a href="#" class="social-btn"><i class="icon-facebook"></i>Facebook</a>
+        <a href="#" class="social-btn"><i class="icon-instagramm"></i>Instagram</a>
+      </div>
+      <div class="social-text">
+        <p class="heading">Давайте дружить, это выгодно!</p>
+        <p class="sub-heading">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=ru"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
